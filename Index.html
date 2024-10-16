@@ -1,62 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Xar Fashion Zone</title>
+    <style>
+        <script>tailwind.config= {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                            Xar-pro: '#E76F51',
+                    }
+                }
+            }
+        }
+
+        </script>
+    </style>
+    <style>
+        .font-poppins {
+            font-family: 'poppins', 'sans-serit';
+        }
+    </style>
 </head>
-<body>
-    <header>
+
+<body class="font-poppins">
+    <header class="md:container md:mx-auto">
         <nav>
             <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 text-[16px] p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>News</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
                     </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Home</a></li>
-                      <li><a>Shop</a></li>
-                      <li><a>News</a></li>
-                      <li><a>Contact</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-xl"><span class="text-red-800">Xar</span> <span class="text-blue-400">Fashion </span><span class="text-gray-500">Zone</span></a>
+                    <a class="btn btn-ghost text-3xl "><span class="text-red-800">Xar</span> <span
+                            class="text-blue-400">Fashion </span><span class="text-gray-500">Zone</span></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>News</a></li>
-                    <li><a>Contact</a></li>
-                  </ul>
+                    <ul class="menu menu-horizontal px-1 text-[16px]">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
                 </div>
-                <div class="navbar-end">
-                    <button class="btn btn-succes bg-red-700 text-white">Login</button>
+                <div class="">
+                    <button class="btn btn-succes bg-blue-700 text-white px-6">Login</button>
                 </div>
-              </div>
+            </div>
         </nav>
+        <!-- slider -->
+        <div class="carousel w-full bg-green-100 h-[580px]">
+            <div id="slide1" class="carousel-item relative w-full">
+                <!-- slide1 -->
+                <div class="flex flex-col lg:flex-row lg:p-[104px] p-4">
+                    <div class="space-y-7">
+                        <h2 class="text-6xl font-bold">Lamborghini Aventador</h2>
+                        <p>
+                            The Aventador has outlandish looks that are bound to<br> grab anyone’s attention. This
+                            two-seater mid-engine <br>layout supercar might not be able to give the <br>comfort or good
+                            ergonomics like your daily driver car.<br> However, this is a maniac that will leave you
+                            <br>spell-bound with its brutal power and fast nature.<br>
+                        </p>
+                        <button class="btn bg-cyan-500 px-6 text-white ">Interested</button>
+                    </div>
+                    <div>
+                        <img src="slider/10.png" class="w-[650px]" />
+                    </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <!-- slide2 -->
+                <div class="flex flex-col lg:flex-row lg:p-[104px] p-4">
+                    <div class="space-y-7">
+                        <h2 class="text-6xl font-bold">Temerario Lamborghini</h2>
+                        <p>
+                            Temerario represents a new evolutionary step in <br>Lamborghini’s journey toward complete
+                            hybridization. <br>The second HPEV (High Performance Electrified Vehicle) from
+                            <br>Sant’Agata Bolognese is a revolution in terms of design, <br>technology, and prowess. A
+                            bi-turbo V8 engine acts in synergy with <br>three electric motors to create a new frontier
+                            of<br> performance and driving emotions <br>that redefine the standards for super
+                            sportscars.<br>
+                        </p>
+                        <button class="btn bg-green-500 px-6 text-white ">Interested</button>
+                    </div>
+                    <div>
+                        <img src="slider/13.png" class="w-[650px]" />
+                    </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <!-- slide3 -->
+                <div class="flex flex-col lg:flex-row lg:p-[104px] p-4">
+                    <div class="space-y-7">
+                        <h2 class="text-6xl font-bold">The Revuelt Lamborghini</h2>
+                        <p>
+                            The Revuelto is the beginning of a new era for Lamborghini, who <br>has harnessed the power
+                            of hybridization<br> technology to create the first HPEV (High Performance<br> Electrified
+                            Vehicle). Responding to the need for<br> sustainability and<br> powerful performance, the
+                            Lamborghini Revuelto<br> rewrites all paradigms and represents a <br>technical masterpiece
+                            beyond anyone’s imagination.<br> The iconic V12 engine finds a new life .<br>
+                        </p>
+                        <button class="btn bg-red-500 px-6 text-white ">Interested</button>
+                    </div>
+                    <div>
+                        <img src="slider/5.png" class="w-[650px]" />
+                    </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <!-- slide4 -->
+                <div class="flex flex-col lg:flex-row lg:p-[104px] p-4">
+                    <div class="space-y-7">
+                        <h2 class="text-6xl font-bold">Lamborghini Urus Vehicle</h2>
+                        <p>
+                            Lamborghini Urus is the world’s first Super Sport Utility <br>Vehicle, where exclusivity,
+                            sportiness, and performance meet <br>comfort and versatility. It offers best-in-class
+                            driving <br>dynamics and unmistakable elegance in design.<br> Urus embodies the
+                            characteristics of multiple souls:<br> sporty, elegant, and off-road. The range is geared
+                            toward the <br>future, ushering in a new era with the first PHEV (Plug-in <br>Hybrid
+                            Electric Vehicle) version of the luxury Super SUV. With its <br>unparalleled performance, a
+                            fun-to-drive experience, and a pioneering<br> spirit, Lamborghini Urus is anything but
+                            typical.<br>
+                        </p>
+                        <button class="btn bg-gray-600 px-6 text-white ">Interested</button>
+                    </div>
+                    <div>
+                        <img src="slider/9.png" class="w-[650px]" />
+                    </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
     </header>
-    <main>
+    <main class="md:container md:mx-auto">
+        <section>
+            <h2 class="ml-[400px] mt-20 text-3xl font-semibold pb-6">Fetured Xar In This Year & Near Future</h2>
+            <div class="flex flex-col lg:flex-row space-x-8 ml-[170px]">
+                <div>
+                    <div class="flex ">
+                        <div class="card bg-base-100 w-96 shadow-xl">
+                            <figure class="px-10 pt-10">
+                                <img src="Image/1.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Lamborghini Diablo</h2>
+                                <p>Lamborghini Diablo (1990) The Diablo is a mid-engine, high-performance sports car
+                                    that
+                                    was manufactured from 1990 to 2001.</p>
+                                <div>
+                                    <!-- You can open the modal using ID.showModal() method -->
+                                    <button class="btn bg-green-400 text-white"
+                                        onclick="my_modal_4.showModal()">Interested</button>
+                                    <dialog id="my_modal_4" class="modal">
+                                        <div class="modal-box w-[400px] max-w-5xl">
+                                            <h3 class="text-lg font-bold">Congratulations!</h3>
+                                            <p class="py-4">Enjoy Your Life With Lamborghini Diablo & Shine It</p>
+                                            <div class="modal-action">
+                                                <form method="dialog">
+                                                    <!-- if there is a button, it will close the modal -->
+                                                    <button class="btn bg-red-600">Done</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </dialog>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex ">
+                        <div class="card bg-base-100 w-96 shadow-xl">
+                            <figure class="px-10 pt-10">
+                                <img src="Image/2.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Huracan Lamborghini</h2>
+                                <p>The V-10–powered Huracán represents the entry-level Lambo while the flagship
+                                    Aventador is the brawniest, oldest, and priciest model.</p>
+                                <div>
+                                    <!-- Open the modal using ID.showModal() method -->
+                                    <button class="btn bg-purple-500 text-white"
+                                        onclick="my_modal_5.showModal()">Interested</button>
+                                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                                        <div class="modal-box">
+                                            <h3 class="text-lg font-bold">Hurrah!</h3>
+                                            <p class="py-4">Yep! You Own this Car Happy journey</p>
+                                            <div class="modal-action">
+                                                <form method="dialog">
+                                                    <!-- if there is a button in form, it will close the modal -->
+                                                    <button class="btn bg-red-700">Thank's</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </dialog>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex ">
+                        <div class="card bg-base-100 w-96 shadow-xl">
+                            <figure class="px-10 pt-10">
+                                <img src="Image/4.png" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 class="card-title">Lamborghini Gallardo</h2>
+                                <p>Lamborghini Gallardo. Statistically speaking, if you see a Lambo cruising down the
+                                    road, it's likely to be a Gallardo.</p>
+                                <div>
+                                    <!-- Open the modal using ID.showModal() method -->
+                                    <button class="btn bg-blue-400 px-8 text-white"
+                                        onclick="my_modal_1.showModal()">Excited!</button>
+                                    <dialog id="my_modal_1" class="modal">
+                                        <div class="modal-box">
+                                            <h3 class="text-lg font-bold">Congratulations!</h3>
+                                            <p class="py-4">Enjoy Lamborghini Diablo And Shine your Life sir</p>
+                                            <div class="modal-action">
+                                                <form method="dialog">
+                                                    <!-- if there is a button in form, it will close the modal -->
+                                                    <button class="btn bg-red-600">Dear</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </dialog>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="ml-[500px] mt-20 text-3xl font-semibold pb-14">Are You Exciter About More Xar's</h2>
+            <div class="flex space-x-8 ml-[170px]">
+                <div>
+                    <div class="card glass w-96">
+                        <figure>
+                            <img src="Image/6.png" alt="car!" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Lamborghini Sesto Elemento</h2>
+                            <p>$2.7 million. In 2011, Lamborghini named its new car, Sesto Elemento, after the sixth
+                                element of the Periodic Table</p>
+                            <div class="card-actions justify-end">
+                                <div>
+                                    <!-- Open the modal using ID.showModal() method -->
+                                    <button class="btn bg-pink-600 text-white" onclick="my_modal_2.showModal()">Lear
+                                        More</button>
+                                    <dialog id="my_modal_2" class="modal">
+                                        <div class="modal-box">
+                                            <h3 class="text-lg text-blue-500 font-bold ml-[180px]">Read Me!</h3>
+                                            <p class="py-4">The Lamborghini Sesto Elemento is a limited-edition supercar
+                                                that debuted at the 2010 Paris Motor Show. It is renowned for its
+                                                innovative use of carbon fiber, which makes the car incredibly
+                                                lightweight at just 999 kg (2,202 lbs). The name "Sesto Elemento"
+                                                translates to "Sixth Element," referencing carbon's position on the
+                                                periodic table and emphasizing the vehicle's carbon fiber construction,
+                                                which extends to its chassis, body, and suspension components.
 
+                                                Under the hood, the Sesto Elemento is powered by a 5.2-liter V10 engine,
+                                                borrowed from the Lamborghini Gallardo, producing 570 horsepower. This
+                                                enables the car to accelerate from 0 to 100 km/h (62 mph) in a
+                                                blistering 2.5 seconds, with a top speed exceeding 300 km/h (186 mph).
+                                                The combination of extreme power and lightweight design makes it one of
+                                                the most performance-focused models Lamborghini has ever created.
+
+                                                The car's design is highly futuristic, characterized by sharp angles, a
+                                                minimalist interior, and a focus on aerodynamics. The use of advanced
+                                                materials and technologies makes the Sesto Elemento not only a marvel of
+                                                engineering but also a symbol of Lamborghini’s commitment to pushing the
+                                                boundaries of automotive innovation. However, it was not designed for
+                                                road use; the car is exclusively intended for track driving, adding to
+                                                its exclusivity and appeal among collectors. Only 20 units were
+                                                produced, making it an extremely rare and coveted piece of automotive
+                                                history.</p>
+                                        </div>
+                                        <form method="dialog" class="modal-backdrop">
+                                            <button>close</button>
+                                        </form>
+                                    </dialog>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card glass w-96">
+                        <figure>
+                            <img src="Image/7.png" alt="car!" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Lamborghini Islero</h2>
+                            <p>The Lamborghini Espada made its grand debut at the 1968 Geneva Auto Show, following
+                                Ferruccio</p>
+                            <div class="card-actions justify-end">
+                                <div>
+                                    <!-- You can open the modal using ID.showModal() method -->
+                                    <button class="btn bg-green-500 text-white" onclick="my_modal_3.showModal()">Learn
+                                        More</button>
+                                    <dialog id="my_modal_3" class="modal">
+                                        <div class="modal-box">
+                                            <form method="dialog">
+                                                <button
+                                                    class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                            </form>
+                                            <h3 class="text-lg font-bold ml-[200px]">Read Me!</h3>
+                                            <p class="py-4">The Lamborghini Islero is a grand tourer produced by
+                                                Lamborghini between 1968 and 1969. It was introduced as the successor to
+                                                the 400 GT and was named after a famous bull that killed the Spanish
+                                                bullfighter Manolete in 1947. Designed by Mario Marazzi of Carrozzeria
+                                                Marazzi, the Islero featured a more understated, elegant design compared
+                                                to the aggressive styling of other Lamborghini models of the time.
+
+                                                The Islero was powered by a 4.0-liter V12 engine, producing 320
+                                                horsepower, allowing it to reach a top speed of around 250 km/h (155
+                                                mph). The car could accelerate from 0 to 100 km/h (62 mph) in about 6.4
+                                                seconds, making it a capable performer for its time. Its engine was
+                                                paired with a 5-speed manual transmission, and the car featured
+                                                independent suspension, disc brakes, and rear-wheel drive, all aimed at
+                                                providing a refined driving experience.
+
+                                                Inside, the Islero had a luxurious interior with leather upholstery,
+                                                wood accents, and advanced instrumentation for its time, reflecting its
+                                                grand touring nature. The cabin was spacious and comfortable, making it
+                                                suitable for long-distance travel in style and comfort.
+
+                                                Lamborghini produced only 225 units of the Islero, with the model
+                                                offered in two variants: the standard Islero and the Islero S, which
+                                                featured a more powerful engine (350 horsepower) and slight design
+                                                improvements, such as wider wheel arches and revised interior details.
+                                                The Islero is often considered one of the more understated and
+                                                lesser-known Lamborghinis, appealing to enthusiasts who appreciate its
+                                                blend of elegance, rarity, and classic V12 performance.</p>
+                                        </div>
+                                    </dialog>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card glass w-96">
+                        <figure>
+                            <img src="Image/8.png" alt="car!" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Lamborghini Huracan EVO </h2>
+                            <p>According to Lamborghini, the Huracan Evo RWD Spyder 'is dedicated to those who believe
+                                in the pure pleasure and excitement of driving. ' The V10 powerplant</p>
+                            <div class="card-actions justify-end">
+                                <div>
+                                    <!-- You can open the modal using ID.showModal() method -->
+                                    <button class="btn bg-cyan-700 text-white" onclick="my_modal_3.showModal()">Learn More</button>
+                                    <dialog id="my_modal_3" class="modal">
+                                        <div class="modal-box">
+                                            <form method="dialog">
+                                                <button
+                                                    class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                            </form>
+                                            <h3 class="text-lg font-bold">Hello!</h3>
+                                            <p class="py-4">The Lamborghini Huracán EVO Spyder is the convertible version of the Huracán EVO, offering a thrilling open-top driving experience combined with cutting-edge technology and high performance. First unveiled in 2019, the Huracán EVO Spyder builds on the advancements of the Huracán EVO coupe while featuring a lightweight soft-top roof that can be retracted in just 17 seconds, even at speeds of up to 50 km/h (31 mph).
+
+                                                Under the hood, the Huracán EVO Spyder is powered by a naturally aspirated 5.2-liter V10 engine that produces 640 horsepower and 600 Nm (442 lb-ft) of torque. This powerhouse enables the car to accelerate from 0 to 100 km/h (62 mph) in just 3.1 seconds, with a top speed of 325 km/h (202 mph). The engine's roar is further accentuated when the top is down, enhancing the immersive driving experience.
+                                                
+                                                The car features Lamborghini Dinamica Veicolo Integrata (LDVI), an advanced system that integrates various vehicle dynamics controls, such as the rear-wheel steering and torque vectoring, making the car incredibly responsive and agile. It also includes the Lamborghini Piattaforma Inerziale (LPI), a system of sensors that monitors the car’s motion in real-time, adjusting traction, suspension, and stability to ensure optimal handling.
+                                                
+                                                The exterior design of the Huracán EVO Spyder is sleek and aerodynamic, featuring sharp lines, an aggressive front bumper, and a rear diffuser that improves downforce. The retractable roof, when closed, maintains the car's low and athletic profile, and the process of opening or closing it doesn't compromise its performance.
+                                                
+                                                Inside, the Huracán EVO Spyder features a high-tech, driver-focused cockpit with an 8.4-inch touchscreen infotainment system, which allows for control of various functions such as navigation, climate control, and multimedia. The interior is luxuriously appointed with premium materials like Alcantara and carbon fiber, with extensive customization options available for buyers to tailor the car to their taste.
+                                                
+                                                Overall, the Lamborghini Huracán EVO Spyder combines exhilarating performance with the excitement of open-top driving, offering a perfect blend of speed, style, and cutting-edge technology in a package that epitomizes the Lamborghini spirit.</p>
+                                        </div>
+                                    </dialog>
+                                </div>
+                                </dialog>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>
